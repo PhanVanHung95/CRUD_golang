@@ -121,7 +121,7 @@ func createTable(db *sql.DB) *sql.DB {
                 "info" TEXT
                 );` // SQL Statement for Create Table
 
-        log.Println("Create student table...")
+        log.Println("Create log table...")
         statement, err := db.Prepare(createLogTableSQL) // Prepare SQL Statement
         if err != nil {
                 log.Fatal(err.Error())
