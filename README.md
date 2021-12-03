@@ -1,8 +1,10 @@
-This is simple example restful api server only with **gorilla/mux**.  
+Project use restful api server only with **gorilla/mux**.  
 
 ## Install and Run
 ```shell
-
+## RUN
+- go run server.go
+- go run rabbitmq_worker.go
 ## API Endpoint
 - http://localhost:3000/api/v1/companies
     - `GET`: get list of companies
