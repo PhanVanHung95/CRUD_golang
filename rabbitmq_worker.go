@@ -93,7 +93,7 @@ func main() {
                 false,  // no-wait
                 nil,    // args
         )
-        failOnError(err, "Failed to register a consumer")
+        failOnError(err, "Fail to register a consumer")
 
         forever := make(chan bool)
 
@@ -109,7 +109,6 @@ func main() {
                         d.Ack(false)
                 }
         }()
-        log.Println("safafds")
 
         log.Printf(" [*] Waiting for messages. To exit press CTRL+C")
         <-forever
